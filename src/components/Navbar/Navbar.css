@@ -1,0 +1,41 @@
+.navbar {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+}
+
+.navbar .item {
+  margin-left: 50px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .item:hover, .navbar .item:active .active {
+  border-bottom: 3px solid red;
+  padding-top: 3px;
+}
+
+.navbar img {
+  margin-left: 50px;
+  height: 50px;
+}
+
+.navbar button {
+  background: limegreen;
+  margin-left: auto;
+  margin-right: 50px;
+  padding: 10px 50px;
+  font-family: Verdana, sans-serif;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+}
+
+.phonenumber {
+  margin-left: auto;
+}
