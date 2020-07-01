@@ -1,4 +1,5 @@
 .navbar {
+  background: white;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -6,15 +7,18 @@
   justify-content: flex-start;
   align-items: center;
   border-bottom: 1px solid lightgrey;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.navbar .item {
+.nav-item {
   margin-left: 50px;
   text-decoration: none;
   color: black;
 }
 
-.navbar .item:hover, .navbar .item:active .active {
+.nav-item:hover, .navbar .active {
   border-bottom: 3px solid red;
   padding-top: 3px;
 }
@@ -24,8 +28,12 @@
   height: 50px;
 }
 
+.phonenumber {
+  margin-left: auto;
+}
+
 .navbar button {
-  background: limegreen;
+  background: #66CC33;
   margin-left: auto;
   margin-right: 50px;
   padding: 10px 50px;
@@ -36,6 +44,45 @@
   border-radius: 25px;
 }
 
-.phonenumber {
-  margin-left: auto;
+.navbar button:hover {
+  background: #66CC33;
+  animation: greenblick .2s;
+  cursor: pointer;
+}
+
+@keyframes greenblick {
+  0% {
+    background: linear-gradient(131deg, rgba(102,204,51,1) -20%, rgba(115,230,60,1) -20%, rgba(115,230,60,1) 30%, rgba(102,204,51,1) 30%);
+  }
+  10% {
+    background: linear-gradient(131deg, rgba(102,204,51,1) -10%, rgba(115,230,60,1) -10%, rgba(115,230,60,1) 40%, rgba(102,204,51,1) 40%);
+  }
+  20% {
+    background: linear-gradient(131deg, rgba(102,204,51,1) 0%, rgba(115,230,60,1) 0%, rgba(115,230,60,1) 50%, rgba(102,204,51,1) 50%);
+  }
+  30% {
+    background: linear-gradient(131deg, rgba(102,204,51,1) 10%, rgba(115,230,60,1) 10%, rgba(115,230,60,1) 60%, rgba(102,204,51,1) 60%);
+  }
+  40% {
+    background: linear-gradient(131deg, rgba(102,204,51,1) 20%, rgba(115,230,60,1) 20%, rgba(115,230,60,1) 70%, rgba(102,204,51,1) 70%);
+  }
+  50% {
+    background: linear-gradient(131deg, rgba(102,204,51,1) 30%, rgba(115,230,60,1) 30%, rgba(115,230,60,1) 80%, rgba(102,204,51,1) 80%);
+  }
+  60% {
+    background: linear-gradient(131deg, rgba(102,204,51,1) 40%, rgba(115,230,60,1) 40%, rgba(115,230,60,1) 90%, rgba(102,204,51,1) 90%);
+  }
+  70% {
+    background: linear-gradient(131deg, rgba(102,204,51,1) 50%, rgba(115,230,60,1) 50%, rgba(115,230,60,1) 100%);
+  }
+  80% {
+    background: linear-gradient(131deg, rgba(102,204,51,1) 60%, rgba(115,230,60,1) 60%, rgba(115,230,60,1) 100%);
+  }
+  90% {
+    background: linear-gradient(131deg, rgba(102,204,51,1) 70%, rgba(115,230,60,1) 70%, rgba(115,230,60,1) 100%);
+  }
+  100% {
+    background: #66CC33;
+    color: #000;
+  }
 }
